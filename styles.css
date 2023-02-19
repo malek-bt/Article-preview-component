@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.wrapper {
+    
+    display: grid;
+    align-items: center;
+    height: 100vh;
+   justify-content: center;
+}
+.card {
+    width: 90vw;
+    border-radius: 1rem;
+    border: none;
+}
+
+.drawer-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.card-body {
+    
+    padding: 0;
+}
+
+h3{
+    color: hsl(217, 19%, 35%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+p{
+    color: hsl(214, 17%, 51%);
+    font-weight: 500;
+    padding: 0 1.5rem 0 1.5rem ;
+}
+.links {
+    margin-top: 2rem ;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 0 1.5rem 0 1.5rem;
+    visibility: visible; ;
+} 
+.avatar {
+    border-radius: 50%;
+    width: 80%;
+}
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    
+}
+span{
+    color: hsl(212, 23%, 69%);
+    font-weight: 500;
+    font-size: .875rem;
+    
+    
+}
+.icon {
+    background-color: hsl(210, 46%, 95%);
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.shareIcon{ 
+    border-radius: 50%;
+    width: 50%;
+    height: 40%;
+    
+}
+
+.share {
+    color: hsl(212, 23%, 69%);
+    font-size: 1rem;
+    letter-spacing: .3125rem;
+    padding: 0;
+    margin: 0;
+}
+
+.active-links{
+    padding: 1rem;
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    border-radius: 0 0 1rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+}
+.icon1 {
+    background-color: hsl(212, 23%, 69%);
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.shareIcon1{ 
+    border-radius: 50%;
+    width: 50%;
+    height: 40%;
+    color: white; 
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+    
+}
+.fb , .tw , .pint {
+    
+    width: 1.5rem;    
+}
+
+@media screen  and (min-width:700px){
+
+    .card {
+        height: 35vh;
+        width: 80vw;
+        border-radius: 0.75rem;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        
+    }
+    .drawer{
+        
+        height: 100%;
+    }
+    .card-body{
+        
+        height: 100%;
+    }
+    .drawer-img{
+        height: 35vh;
+        border-radius: .75rem 0 0 .75rem;
+    }
+    .avatar {
+        width: 50%;
+        height: 100%;
+    }
+    p{
+        font-size: .875rem;
+        
+    }
+    .icon {
+        
+        width: 2rem;
+        height: 2rem;
+        
+    }
+    h4 {
+        font-size: .875rem;   
+    }
+    .active-links{
+        width: 30%;
+        height: 17%;
+        border-radius: .75rem;
+        position: absolute;
+        left: 72%;
+        top: 50%;
+        visibility: hidden;
+    }
+    .active-links::after {
+        position: absolute;
+        content: "";
+        background-color: transparent ;
+        border-right: 1.25rem solid transparent;
+        border-left: 1.25rem solid transparent;
+        border-top: 1.25rem solid hsl(217, 19%, 35%) ;
+        top: 80%;
+        left:35% ;
+        
+      }
+    .icon1 {
+        display: none;
+    }
+    .fb , .tw , .pint { 
+        width: 1.25rem;    
+    }
+    .share {
+        font-size: .75rem;
+    }
+    
+}
+@media screen  and (min-width:1400px){
+
+    .card {
+        
+        width: 45vw;
+        
+        
+    }
+    
+    
+}
